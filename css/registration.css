@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg1.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 100%;
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
+}
+.header-overlay, .footer-overlay {
+    background-color: rgba(121,36,33,0.75);
+    padding: 5px;
+}
+.company-name h1{
+    font-size: 70px;
+    color: #ffffff;
+}
+.main-content{
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+h4 {
+    text-align: center;
+    color: #d43f3a;
+}
+.container{
+    background-color: black;
+    opacity: 0.8;
+}
+label{
+    color: whitesmoke;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.inputcss{
+    border: 1px solid lightgray;
+    margin: 8px;
+    padding: 1px;
+    border-radius: 2px;
+    height: 30px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.inputadd{
+    border: 1px solid lightgray;
+    margin: 8px;
+    padding: 1px;
+    border-radius: 2px;
+    height: 30px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 470px;
+}
+.file-upload {
+    content: 'Select some files';
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    margin: 8px;
+}
+
+.file-upload:-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+    cursor: pointer;
+}
+::-webkit-input-placeholder {
+    text-transform: lowercase;
+    margin-left: 3px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: left;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: left;
+}
+
+:-ms-input-placeholder {
+    text-align: left;
+    margin-left: 3px;
+}
+.btn-primary{
+    margin: 20px;
+    left: 37%;
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+.btn-primary:hover{
+    background-color: black;
+}
