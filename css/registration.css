@@ -3,17 +3,24 @@ body{
     padding: 0;
     background-image: url("../images/bg1.jpg");
     background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     /*overflow-y: scroll;
     overflow-x: hidden;*/
 }
-.header-overlay, .footer-overlay {
-    background-color: rgba(121,36,33,0.75);
+.header-overlay {
+    background-color: rgba(41,63,127,0.4);
+    padding: 5px;
+}
+.footer-overlay {
+    background-color: rgba(41,63,127,0.85);
     padding: 5px;
 }
 .company-name h1{
-    font-size: 70px;
+    font-size: 100px;
+    font-weight: 600;
+    text-shadow: 3px 3px black;
     color: #ffffff;
 }
 .main-content{
@@ -22,19 +29,29 @@ body{
     background-size: 100%;
 
 }
+.container-heading h1{
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
 h4 {
     text-align: center;
-    color: #d43f3a;
+    color: #ffffff;
 }
-.container{
+.form-overlay{
+    background-color: rgba(0,0,1,0.55);
+
+}
+/*.container{
     background-color: black;
     opacity: 0.8;
-}
+    width: 1400px;
+}*/
 label{
-    color: whitesmoke;
+    color: #ffffff;;
     padding: 10px;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 .inputcss{
     border: 1px solid lightgray;
@@ -42,26 +59,31 @@ label{
     padding: 1px;
     border-radius: 2px;
     height: 30px;
-    color: black;
+    color: #ffffff;
     font-family: sans-serif;
     font-size: 15px;
+    background-color: transparent;
+    border: 2px solid  #4165CC;
 }
 .inputadd{
-    border: 1px solid lightgray;
+    /*border: 1px solid lightgray;*/
     margin: 8px;
     padding: 1px;
     border-radius: 2px;
     height: 30px;
-    color: black;
+    color: #ffffff;
     font-family: sans-serif;
     font-size: 15px;
-    width: 470px;
+    width: 570px;
+    background-color: transparent;
+    border: 2px solid  #4165CC;
 }
+
 .file-upload {
     content: 'Select some files';
     display: inline-block;
-    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
-    border: 1px solid #999;
+    background: -webkit-linear-gradient(top, /*#f9f9f9*/transparent, /*#e3e3e3*/transparent);
+    /*border: 1px solid #999;*/
     border-radius: 3px;
     padding: 5px 8px;
     outline: none;
@@ -72,18 +94,24 @@ label{
     font-weight: 700;
     font-size: 10pt;
     margin: 8px;
+    border: 2px solid #4165CC;
+    color:#ffffff;
+    /*background-color: transparent;*/
 }
 
-.file-upload:-webkit-file-upload-button {
+/*.file-upload-webkit-file-upload-button {
     visibility: hidden;
 }
-.custom-file-input:hover::before {
+.file-upload:hover::before {
     border-color: black;
     cursor: pointer;
-}
+
+}*/
 ::-webkit-input-placeholder {
-    text-transform: lowercase;
+    text-transform: capitalize;
     margin-left: 3px;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -97,14 +125,133 @@ label{
 :-ms-input-placeholder {
     text-align: left;
     margin-left: 3px;
+
 }
 .btn-primary{
-    margin: 20px;
-    left: 37%;
-    margin: 5px;
+    margin-top: 10px;
+    margin-left: 286px;
     margin-bottom: 15px;
+    font-size: 18px;
     background-color: transparent;
+    border: 1px solid #4165CC;
+    color: #ffffff;
 }
 .btn-primary:hover{
-    background-color: black;
+    background-color: #293F7F;
+    border: 1px solid #4165CC;
+    color:  #B5AFFF;
+    font-weight: 700;
+
+    transition: all 0.5s;
 }
+.sign-in-container .liButton{
+    height: 50px;
+    width: 240px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 20px;
+    border: 1px solid #4165CC;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.sign-in-container .liButton:hover{
+    background-color: #293F7F;
+    border: 1px solid #4165CC;
+    color:  #ffffff;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.copyright h4{
+    font-size: 15px;
+}
+.progress{
+    height: 30px;
+}
+.progress .progress-bar{
+    font-size: 14px;
+    width: 5%;
+    padding: 4px;
+}
+
+
+
+/*--------------Mdia Queries--------------------------*/
+@media (min-width : 768px) {
+    .sign-in-container .liButton{
+        height: 50px;
+        width: 240px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px 20px;
+        border: 1px solid #4165CC;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+    .sign-in-container .liButton:hover{
+        background-color: #293F7F;
+        border: 1px solid #4165CC;
+        color:  #ffffff;
+        font-weight: 600;
+        transition: all 0.5s;
+    }
+}
+/* Custom, iPhone Retina */
+@media (min-width : 320px )  {
+    .company-name h1{
+        font-size: 60px;
+        font-weight: 600;
+        text-shadow: 3px 3px black;
+        color: #ffffff;
+    }
+    .progress {
+        height: 30px;
+    }
+    .progress .progress-bar{
+        font-size: 18px;
+        width: 50%;
+        padding: 3px;
+    }
+    .sign-in-container .liButton{
+        height: 80px;
+        width: 500px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        padding: 5px 20px;
+        border: 1px solid #4165CC;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+/*
+@media only screen and (max-width : 767px) {
+    .company-name h1{
+        font-size: 60px;
+        font-weight: 600;
+        text-shadow: 3px 3px black;
+        color: #ffffff;
+    }
+    .progress {
+        height: 40px;
+    }
+    .progress .progress-bar{
+        font-size: 18px;
+        width: 15%;
+        vertical-align: middle;
+    }
+}*/
