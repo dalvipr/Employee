@@ -2,157 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Employee On-Board</title>
 
     <!------------------CSS-------------------------------->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
 
     <!------------------ Script------------------------->
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" type="text/javascript" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+            $('.fb-link').hover( function () {
+                $('.fb-link').addClass('animated bounce').one(animationEnd, function () {
+                    $('.fb-link').removeClass('animated bounce');
+                });
+            });
+            $('.li-link').hover( function () {
+                $('.li-link').addClass('animated bounce').one(animationEnd, function () {
+                    $('.li-link').removeClass('animated bounce');
+                });
+            });
+
+        });
+
+    </script>
+
 
 </head>
 <body>
-    <header class="header">
-        <div class="header-overlay">
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="logo">
-                            <img src="../images/logo.jpg" alt="logo">
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="company-name">
-                            <h1>Helios And Matheson</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </header>
-    <div class="main-content">
-        <div class="content-overlay">
-            <div class="container-fluid content">
-                <div class="row">
-                    <div class="col-md-12 text-center content-heading">
-                        <h1>Employee On-board Portal</h1>
-                    </div>
-                </div>
-                <!------Left Side-------------->
-                <div class="row">
-                    <div class="col-md-6 text-center welcom-message">
-                       <h2>Welcome to Helios and Matheson</h2>
-
-                        <p>Welcome to Helios and Matheson. Hope you will have a great time working with us.
-                                Welcome aboard new buddy!</p>
+ <header class="header">
+     <div class="header-overlay col-xs-12 col-md-12 col-sm-12">
+         <div class="container-fluid">
+             <div class="row visible-md visible-lg hidden-sm hidden-xs">
+                 <div class="col-md-4 animated flipInX">
+                     <div class="logo">
+                         <img src="../images/logo.jpg" alt="logo">
+                     </div>
+                 </div>
+                 <div class="col-md-8 animated zoomIn">
+                     <div class="company-name">
+                         <h1>Helios And Matheson</h1>
+                     </div>
+                 </div>
+             </div>
+             <div class="row visible-xs visible-sm hidden-lg hidden-md">
+                 <div class="col-xs-2 animated flip">
+                     <div class="logo-sm">
+                         <img src="../images/logo.jpg" alt="logo">
+                     </div>
+                 </div>
+                 <div class="col-sm-10 text-center sm-device animated zoomIn">
+                     <div class="company-name-sm ">
+                         <h1>Helios And Matheson</h1>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </header>
+ <div class="main-content">
+     <div class="content-overlay">
+         <div class="container-fluid content">
+             <div class="row">
+                 <div class="col-md-12 col-xs-12 text-center content-heading animated bounce">
+                     <h1>Employee On-board Portal</h1>
+                 </div>
+             </div>
+             <!------Left Side-------------->
+             <div class="row">
+                 <div class="col-md-6 col-xs-12 text-center welcom-message">
+                     <h2>Welcome to Helios and Matheson</h2>
+                        <p>Welcome to Helios and Maheson. Hope you will have a great time working with us.
+                                        Welcome aboard newbuddy!</p>
                         <p>Please go ahead for the Registration. And will see you soon at our place</p>
 
-                        <div class="row button-links">
-                            <div class="col-md-6">
-                                <a href="#" class="registration-btn">Register</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="learn-more-btn">Learn More
-                                <i class="fa fa-angle-down"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-----------Right Side---------------------------->
-                    <div class="col-md-6 text-center registration-process">
-                        <h2>Employee Registration Process</h2>
-                        <div class="row steps">
-                            <div class="col-md-2">
-                                <div class="circle">1</div>
-                            </div>
-                            <div class="col-md-10 registration-steps">
-                                <h1>Account Creation</h1>
-                            </div>
-                        </div>
-                        <div class="row steps">
-                            <div class="col-md-2">
-                                <div class="circle">2</div>
-                            </div>
-                            <div class="col-md-10 registration-steps">
-                                <h1>Offer Letter Acceptance</h1>
-                            </div>
-                        </div>
-                        <div class="row steps">
-                            <div class="col-md-2">
-                                <div class="circle">3</div>
-                            </div>
-                            <div class="col-md-10 registration-steps">
-                                <h1>Employment Agreement Acceptance</h1>
-                            </div>
-                        </div>
-                        <div class="row steps">
-                            <div class="col-md-2">
-                                <div class="circle">4</div>
-                            </div>
-                            <div class="col-md-10 registration-steps">
-                                <h1>Review and Sign Employee Handbook</h1>
-                            </div>
-                        </div>
-                        <div class="row steps">
-                            <div class="col-md-2">
-                                <div class="circle">5</div>
-                            </div>
-                            <div class="col-md-10 registration-steps">
-                                <h1>Background Check</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-overlay">
+                     <div class="row button-links">
+                         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6 animated shake r-button">
+                             <a href="registration.html" class="registration-btn">Register</a>
+                         </div>
+                         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6 animated shake l-button">
+                             <a href="#" class="learn-more-btn">Learn More
+                                 <i class="fa fa-angle-down"></i></a>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="">
-                            <h4>&copy Helios and Matheson 2016.</h4>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="company-info">
-                            <h2>Helios and Matheson</h2>
-                            <h4>California, US</h4>
-                            <h4><span class="glyphicon glyphicon-phone"></span>
-                                <a href="tel:+1111111111">1111111111</a></h4>
-                            <h4><span class="glyphicon glyphicon-envelope"></span>
-                            <a href="#">email@hmny.com</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="about-us">
-                            <h2>About Us</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Clients</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                        <div class="col-md-4">
-                            <div class="social-links">
-                                <h2>Social links</h2>
-                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                                <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                            </div>
-                        </div>
-                </div>
-            </div>
+                         </div>
+                     </div>
+                 </div>
+                            <!-----------Right Side---------------------------->
+                 <div class="col-md-6 col-xs-12 text-center registration-process">
+                     <h2>Employee Registration Process</h2>
+                     <div class="row steps">
+                         <div class="col-md-2 col-xs-2 animated zoomIn">
+                             <div class="circle">1</div>
+                         </div>
+                         <div class="col-md-10 col-xs-10 registration-steps animated lightSpeedIn">
+                             <h1>Account Creation</h1>
+                         </div>
+                     </div>
+                     <div class="row steps">
+                         <div class="col-md-2 col-xs-2 animated zoomIn">
+                             <div class="circle">2</div>
+                         </div>
+                         <div class="col-md-10 col-xs-10 registration-steps animated lightSpeedIn">
+                             <h1>Offer Letter Acceptance</h1>
+                         </div>
+                     </div>
+                     <div class="row steps">
+                         <div class="col-md-2 col-xs-2 animated zoomIn">
+                             <div class="circle">3</div>
+                         </div>
+                         <div class="col-md-10 col-xs-10 registration-steps animated lightSpeedIn">
+                             <h1>Employment Agreement Acceptance</h1>
+                         </div>
+                     </div>
+                     <div class="row steps">
+                         <div class="col-md-2 col-xs-2 animated zoomIn">
+                             <div class="circle">4</div>
+                         </div>
+                         <div class="col-md-10 col-xs-10 registration-steps animated lightSpeedIn">
+                             <h1>Review and Sign Employee Handbook</h1>
+                         </div>
+                     </div>
+                     <div class="row steps">
+                         <div class="col-md-2 col-xs-2 animated zoomIn">
+                             <div class="circle">5</div>
+                         </div>
+                         <div class="col-md-10 col-xs-10 registration-steps animated lightSpeedIn">
+                             <h1>Background Check</h1>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <footer class="footer">
+     <div class="footer-overlay">
+         <div class="container-fluid">
+             <div class="row">
+                 <div class="col-md-12 col-xs-12 text-center">
+                     <div class="copyright">
+                         <h4>&copy 2016 Helios and Matheson Analytics Inc. All rights reserved.</h4>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-4 col-xs-6 text-center">
+                     <div class="company-info">
+                         <h2>Helios and Matheson</h2>
+                         <h4>California, US</h4>
+                         <h4><span class="glyphicon glyphicon-phone"></span>
+                             <a href="tel:+1111111111">1111111111</a></h4>
+                         <h4><span class="glyphicon glyphicon-envelope"></span>
+                             <a href="#">email@hmny.com</a></h4>
+                     </div>
+                 </div>
+                 <div class="col-md-4 col-xs-6 text-center">
+                     <div class="about-us">
+                         <h2>About Us</h2>
+                         <ul class="list-unstyled">
+                             <li><a href="#">Products</a></li>
+                             <li><a href="#">Services</a></li>
+                             <li><a href="#">Clients</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="col-md-4 col-xs-12 text-center">
+                     <div class="social-links">
+                         <h2>Social links</h2>
+                         <a href="#" class=""><i class="fb-link fa fa-facebook fa-2x"></i></a>
+                         <a href="#"><i class="li-link fa fa-linkedin-square fa-2x"></i></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </footer>
 
-        </div>
-    </footer>
 </body>
 </html>
