@@ -3,18 +3,36 @@ body{
     padding: 0;
     background-image: url("../images/bg1.jpg");
     background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background-size: 100%;*/
     /*overflow-y: scroll;
     overflow-x: hidden;*/
 }
-.header-overlay, .footer-overlay {
-    background-color: rgba(121,36,33,0.75);
+.header-overlay  {
+    background-color: rgba(41,63,127,0.4);
+    padding: 5px;
+}
+.footer-overlay{
+    background-color: rgba(41,63,127,0.7);
     padding: 5px;
 }
 .company-name h1{
     font-size: 100px;
+    font-weight: 600;
+    text-shadow: 3px 3px black;
     color: #ffffff;
+}
+.sm-device{
+    margin-top: 50px;
+}
+.company-name-sm h1{
+    font-size: 60px;
+    margin-top: 20px;
+    text-shadow: 3px 3px black;
+    color: #ffffff;
+    font-weight: 700;
 }
 .main-content{
     /*background-image: url("../images/bg1.jpg");*/
@@ -23,53 +41,65 @@ body{
     background-size: 100%;
     /*height: 800px;*/
 
+
 }
 .content-overlay{
-    background-color: rgba(300,100,0,0.45);
+    background-color: rgba(0,0,1,0.55);
    /* background-color: rgba(31,31,31,0.75);*/
     /*height: 800px;*/
     padding: 40px;
 }
 .content-heading h1{
-    margin-top: 0;
-    font-size: 75px;
+    margin-top: 50px;
+    font-size: 60px;
     text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+
 }
 
 .welcom-message h2, .registration-process h2{
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 40px;
+    color: #ffffff;
 }
 .welcom-message p {
-    font-size: 26px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 /* Left Side*/
 .circle{
-    background-color: #e38d13;
+    background-color: #293F7F;
     border-radius: 200px;
-    color: #985f0d;
-    height: 80px;
-    font-size: 55px;
+    color: #ffffff;
+    height: 70px;
+    font-size: 45px;
     font-weight: bold;
-    width: 80px;
+    width: 70px;
     vertical-align: middle;
     /*border: 5px solid black;*/
+
 }
 
 .registration-steps h1{
     text-align: left;
-    font-size: 40px;
+    font-size:35px;
+    color: #ffffff;
 
 }
 .steps{
-    margin-top: 15px;
-    margin-left: 90px;
+    margin-top: 20px;
+    margin-left: 150px;
 }
 
 /* Right Side*/
 .button-links{
     margin-top: 80px;
+}
+.button-links>div{
+    margin-bottom: 50px;
 }
 .registration-btn,
 .registration-btn:focus,
@@ -81,10 +111,10 @@ body{
 .learn-more-btn:visited{
     background-color: transparent;
     text-decoration: none;
-    color: #e38d13;
-    border: 3px solid #985f0d;
+    color: #ffffff;
+    border: 3px solid #4165CC;
     padding: 10px;
-    font-size: 50px;
+    font-size: 35px;
     text-transform: uppercase;
     border-radius: 15px;
     transition: all 1s;
@@ -93,24 +123,139 @@ body{
 }
 .registration-btn:hover, .learn-more-btn:hover{
     text-decoration: none;
-    background-color: #e38d13;
-    color: #792421;
+    background-color: #293F7F;
+    color: #B5AFFF;
 }
 /* Footer*/
+.copyright h4{
+    color: #ffffff;
+
+    font-size: 15px;
+}
 .company-info h2, .about-us h2,
 .social-links h2{
     color: #ffffff;
 }
 .company-info h4 ,.company-info a,
 .about-us h4, .about-us a{
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #ffffff;
 }
 .company-info a:hover,
 .about-us a:hover{
-    color: #985f0d;
+    color: #B5AFFF;
 }
-.social-links
+.social-links i {
+    color: #ffffff;
+    margin-left: 10px;
+}
+.social-links i:hover{
+    color: #B5AFFF;
+}
+
+/***************Animation********************/
+.r-button, .l-button{
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+}
+.registration-steps {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************/
+@media (max-width: 768px) {
+    body{
+        background-image: url("../images/bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .company-name h1{
+        font-size: 10px;
+    }
+
+    .circle{
+        margin-left: 25%;
+        /*float: left;*/
+
+    }
+    .registration-steps h1{
+        margin-left: 5%;
+
+    }
+
+}
+/*
+@media only screen and (min-width : 1200px)  {
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/bg3.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        !*background-size: 100%;*!
+        !*overflow-y: scroll;
+        overflow-x: hidden;*!
+    }
+
+}
+
+@media only screen and (max-width : 979px) and (min-width: 768px) {
+
+
+}
+
+@media only screen and (max-width : 767px) and (min-width: 781px)  {
+   !* body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/bg2.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        !*background-size: 100%;*!
+        !*overflow-y: scroll;
+        overflow-x: hidden;*!
+    }*!
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 375px) {
+    body{
+        background-image: url("../images/bg2.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+}
+
+
+*/
